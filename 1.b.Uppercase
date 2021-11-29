@@ -1,0 +1,12 @@
+// Anonymous Function
+let str="pooja";
+let capitalstr = function(a){
+    console.log(`The upper case of the string is ${a.toUpperCase()}`)
+}
+capitalstr(str);
+
+// IIFE function
+  let str="pooja";
+(function(a){
+    console.log(`The upper case of the string is ${a.toUpperCase()}`)
+})(str);
