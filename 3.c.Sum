@@ -1,0 +1,9 @@
+let sum=0;
+let add= (num) => {
+    for(i in num)
+      {
+          sum=sum+num[i];
+      }
+  console.log(` The sum of numbers in the array ${sum}`)
+}
+add(arr);
