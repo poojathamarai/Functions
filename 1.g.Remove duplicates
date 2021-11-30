@@ -1,0 +1,18 @@
+
+//Anonymous Function
+let arr=[1,2,5,1,7,5,9,3,4,7,5,];
+let uniqarr= function(arr)
+{
+     ans=[... new Set(arr)]
+     console.log(`The unique array is ${ans}`);
+}
+uniqarr(arr);
+
+
+//IIFE function
+let arr=[1,2,5,1,7,5,9,3,4,7,5,];
+(function(arr)
+{
+     ans=[... new Set(arr)]
+     console.log(`The unique array is ${ans}`);
+})(arr);
