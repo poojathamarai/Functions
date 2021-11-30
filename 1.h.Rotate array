@@ -1,0 +1,28 @@
+//Anonymous Function
+
+let arr=[1,2,3,4,5];
+let rotate = function(num,k)
+{   
+    for(let i=1;i<=k;i++)
+    {  
+        num.unshift(num.pop());        
+    }
+     console.log(`The rotated array is ${num}`)
+}
+
+rotate(arr,3);
+
+
+//IIFE function
+
+
+let arr=[1,2,3,4,5];
+(function(num,k)
+{   
+    for(let i=1;i<=k;i++)
+    {  
+        num.unshift(num.pop());        
+    }
+     console.log(`The rotated array is ${num}`)
+})(arr,3)
+ 
