@@ -1,0 +1,28 @@
+
+//Anonymous Function
+let arr1=[1,12,15,26,38];
+let arr2=[13,17,30,45,2];
+let median = function(arr1,arr2)
+{
+    let unsorted_arr=arr1.concat(arr2);
+    let sorted_arr=unsorted_arr.sort(function(a,b){return a-b});
+    let len=sorted_arr.length;
+    let sum= sorted_arr[parseInt((len-1)/2)] + sorted_arr[parseInt((len)/2)];
+    let ans=sum/2;
+    console.log(`Median of the two arrays is ${ans}`);
+}
+median(arr1,arr2);
+
+
+//IIFE function
+let arr1=[1,12,15,26,38];
+let arr2=[13,17,30,45,2];
+(function(arr1,arr2)
+{
+    let unsorted_arr=arr1.concat(arr2);
+    let sorted_arr=unsorted_arr.sort(function(a,b){return a-b});
+    let len=sorted_arr.length;
+    let sum= sorted_arr[parseInt((len-1)/2)] + sorted_arr[parseInt((len)/2)];
+    let ans=sum/2;
+    console.log(`Median of the two arrays is ${ans}`);
+})(arr1,arr2) 
