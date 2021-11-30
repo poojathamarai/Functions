@@ -1,0 +1,24 @@
+let a = [1,2,3,4,5,6,7,8,9,10]
+let prime = [];
+
+let prime_num = (num) => {
+    if(num == 1)
+      return false;
+    if(num == 2)
+    return true;
+      for (let j = 2; j <= num/2; j++) 
+      {
+       if ((num % j) == 0) 
+       { 
+        return false;
+       } 
+     }
+     return true;
+}
+for (i in a) {
+  if (prime_num(a[i])) {
+      prime.push(a[i])
+  }
+}
+
+console.log(`The prime numbers in the array are ${prime}`);
