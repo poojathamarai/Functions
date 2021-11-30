@@ -1,0 +1,56 @@
+//Anonymous function
+let a = [1,2,3,4,5,6,7,8,9,10]
+let prime = [];
+
+let prime_num = function(num) {
+    if(num == 1)
+      return false;
+    if(num == 2)
+    return true;
+      for (let j = 2; j <= num/2; j++) 
+      {
+       if ((num % j) == 0) 
+       { 
+        return false;
+       } 
+     }
+     return true;
+}
+for (i in a) {
+  if (prime_num(a[i])) {
+      prime.push(a[i])
+  }
+}
+console.log(`The prime numbers in the array are ${prime}`);
+
+
+let a = [1,2,3,4,5,6,7,8,9,10,];
+(function(a) {
+    let prime = [];
+    for(i in a)
+    {
+        if(a[i] == 1)
+         continue;
+        else if(a[i] == 2)
+           prime.push(a[i]);
+          else
+           { 
+               for (let j = 2; j<a[i]; j++) 
+                 {
+                     if ((a[i] % j) == 0)
+                        { 
+                            break;
+                        } 
+                      else
+                      if(a[i]% 9 !== 0)
+                      {
+                        prime.push(a[i]);
+                        break;
+                      }
+                        
+                  }
+           }
+        
+    }
+    console.log(`The prime numbers in the array are ${prime}`);
+})(a)
