@@ -1,0 +1,11 @@
+let arr=[1,2,3,4,5,6,7,8,9,10];
+let oddnum = (num) => {
+     console.log("The odd numbers in the array are")
+    for(i in num)
+    {
+        if(num[i]%2!==0)
+        console.log(`${num[i]}`)
+    }
+
+}
+oddnum(arr);
